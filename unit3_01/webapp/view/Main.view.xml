@@ -1,0 +1,10 @@
+<mvc:View controllerName="unit301.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+        <Label id="lblName" text="Name" />
+        <Input id="inpName" description="Enter your name" placeholder="Input your name" />
+        <Button id="btnPress" text="Press me" press="onClick" />
+    </Page>
+</mvc:View>

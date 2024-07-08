@@ -1,0 +1,25 @@
+<mvc:View controllerName="unit701.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:l="sap.ui.layout">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <!-- layout -->
+        <l:VerticalLayout id="verticalLyoId">
+        <l:content>
+        <!--  -->
+        <Label labelFor="teamInput" text="Team Name" id="teamLabId" />
+        <Input id="teamInput" description="Enter Team Name"></Input>
+        <!--  -->
+        <Label labelFor="FirInput" text="First Name" id="FirLabId" />
+        <Input id="FirInput" description="Enter First Name" />
+        <!--  -->
+        <Label labelFor="LastInput" text="Last Name" id="LastLabId" />
+        <Input id="LastInput" description="Enter Last Name" />
+        <!--  -->
+        <Label labelFor="btnBtn" text="Name" id="btnLabId" />
+        <Button id="idInput" text="Click me" press="onClick" />
+        </l:content>
+        </l:VerticalLayout>
+        </content>
+    </Page>
+</mvc:View>

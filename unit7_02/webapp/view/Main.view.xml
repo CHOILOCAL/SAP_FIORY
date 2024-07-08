@@ -1,0 +1,23 @@
+<mvc:View controllerName="unit702.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:l="sap.ui.layout">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <l:HorizontalLayout id="idHorLayout">
+        <l:content>
+        <!--  -->
+        <Label labelFor="FirInput" text="First Name" id="FirLabId" />
+        <Input id="FirInput" />
+        <!--  -->
+        <Label labelFor="LastInput" text="Last Name" id="LastLabId" />
+        <Input id="LastInput" />
+        <!--  -->
+        <!-- <Label labelFor="btnBtn" text="Name" id="btnLabId" /> -->
+        <Button id="idInput" text="Click me" press="onClick" />
+        <!-- <Text text="" id="allNm" /> -->
+        <Input id="allNm" editable="false" />
+        </l:content>
+        </l:HorizontalLayout>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,12 @@
+<mvc:View controllerName="unit601.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+        <Text id="id" text="XML View" />
+        <CheckBox id="chkBox1" text="XML View CheckBox" select="onSelect"></CheckBox>
+
+        <mvc:JSView id="idJSView" viewName="unit601.view.JSView" />
+        <mvc:JSONView id="idJSONView" viewName="unit601.view.JSONView" />
+    </Page>
+</mvc:View>

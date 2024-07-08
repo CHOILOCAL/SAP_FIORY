@@ -1,0 +1,12 @@
+<mvc:View controllerName="quiz02.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <Label id="lblXml" text="Team Name" />
+        <Input id="inpXml" value="" />
+         <Text id="txt1" text="Enter the Team Name" />
+        <Button id="btnXml" text="Search" press="onClick" />
+
+        <mvc:JSView id="idJSView" viewName="quiz02.view.JSView" />
+    </Page>
+</mvc:View>

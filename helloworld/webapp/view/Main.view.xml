@@ -1,0 +1,7 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="student24.sap.training.helloworld.controller.Main" displayBlock="true">
+    <Page id="page" title="{i18n>SAP Business Application Studio}">
+        <content>
+            <Text xmlns="sap.m" text="Hello World" id="text0"/>
+        </content>
+    </Page>
+</mvc:View>

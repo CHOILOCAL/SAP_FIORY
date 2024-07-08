@@ -1,0 +1,86 @@
+<mvc:View controllerName="quiz01.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:l="sap.ui.layout" height="100%">
+    <Page id="page" title="{i18n>title}">
+    <content>
+    <l:HorizontalLayout id="idHorLayout">
+        <l:content>
+        <l:Grid id="idGrid" vSpacing="1" hSpacing="1">
+        <l:content>
+        <HBox id="hBoxInput1">
+        <Label id="lblNb1" text="Number 1">
+        <layoutData>
+        <l:GridData id="idGridData1"></l:GridData>
+        </layoutData>
+        </Label>
+
+        <Input id="inpNb1" value="" type="Number" placeholder="Please, Input Number">
+        <layoutData>
+        <l:GridData id="idGridData2"></l:GridData>
+        </layoutData>
+        </Input>
+        </HBox>
+
+        <HBox id="hBoxInput2">
+        <Label id="lblNb2" text="Number 2">
+        <layoutData>
+        <l:GridData id="idGridData3"></l:GridData>
+        </layoutData>
+        </Label>
+
+        <Input id="inpNb2" value="" type="Number" placeholder="Please, Input Number">
+        <layoutData>
+        <l:GridData id="idGridData4"></l:GridData>
+        </layoutData>
+        </Input>
+        </HBox>
+
+<HBox id="hBoxInp3">
+        <Label id="lbres" text="Result" />
+        <Input id="allNm" editable="false" />
+</HBox>
+
+        <!-- + -->
+        <HBox id="hBoxBtn">
+        <Button id="btnPlus" text="+" press="onClick('+')" type="Emphasized">
+        <layoutData>
+        <l:GridData id="idGridData5"></l:GridData>
+        </layoutData>
+        </Button>
+
+        <!-- - -->
+        <Button id="btnMinus" text="-" press="onClick('-')" type="Reject">
+        <layoutData>
+        <l:GridData id="idGridData6"></l:GridData>
+        </layoutData>
+        </Button>
+
+        <!-- X -->
+        <Button id="btnMultiply" text="*" press="onClick('X')" type="Accept">
+        <layoutData>
+        <l:GridData id="idGridData7"></l:GridData>
+        </layoutData>
+        </Button>
+
+        <!-- / -->
+        <Button id="btnDivision" text="/" press="onClick('/')">
+        <layoutData>
+        <l:GridData id="idGridData8"></l:GridData>
+        </layoutData>
+        </Button>
+
+        <!-- Clear -->
+        <Button id="btnClear" text="Clear" press="onClick('C')">
+        <layoutData>
+        <l:GridData id="idGridData9"></l:GridData>
+        </layoutData>
+        </Button>
+        </HBox>
+        
+        </l:content>
+        </l:Grid>
+        </l:content>
+        </l:HorizontalLayout>
+        </content>
+    </Page>
+</mvc:View>

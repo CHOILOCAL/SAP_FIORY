@@ -1,0 +1,43 @@
+<mvc:View controllerName="unit703.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:l="sap.ui.layout">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+        <l:Grid id="idGrid" vSpacing="1" hSpacing="1">
+        <l:content>
+        <Label id="lblFname" text="First Name">
+        <layoutData>
+        <l:GridData id="idGridData1" span="L2 M4 S12"></l:GridData>
+        </layoutData>
+        </Label>
+
+        <Input id="inpFname" value="홍">
+        <layoutData>
+        <l:GridData id="idGridData2" span="L10 M8 S12"></l:GridData>
+        </layoutData>
+        </Input>
+
+        <Label id="lblLname" text="Last Name">
+        <layoutData>
+        <l:GridData id="idGridData3" span="L2 M4 S12"></l:GridData>
+        </layoutData>
+        </Label>
+
+        <Input id="inpLname" value="길동">
+        <layoutData>
+        <l:GridData id="idGridData4" span="L10 M8 S12"></l:GridData>
+        </layoutData>
+        </Input>
+
+        <Button id="btnSubmit" text="Submit" press="onClick">
+        
+        <layoutData>
+        <l:GridData id="idGridData5" indent="M4" span="L2 M4 S12"></l:GridData>
+        </layoutData>
+
+        </Button>
+        
+        </l:content>
+        </l:Grid>
+    </Page>
+</mvc:View>

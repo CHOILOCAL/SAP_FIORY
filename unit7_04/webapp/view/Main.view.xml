@@ -1,0 +1,38 @@
+<mvc:View controllerName="unit704.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+        <l:ResponsiveFlowLayout id="resFlLayout">
+        <l:content>
+        <!-- 전제 행 최대화 100% 설정 -->
+        <l:VerticalLayout id="vertLay" width="100%">
+        <!-- margin="true" 여백 설정 -->
+        <l:layoutData>
+        <!-- minWidth 최소 크기(단위 픽셀, 기본값) -->
+        <l:ResponsiveFlowLayout  id="resData" margin="true" minWidth="200">
+        </l:ResponsiveFlowLayout>
+        </l:layoutData>
+
+        <l:content>
+        <Label id="lblFirst" text="First Name"></Label>
+        <Input id="inpFirst" value="길동"></Input>
+        </l:content>
+
+        <l:VerticalLayout id="vertLay2" width="100%">
+        <l:layoutData>
+        <l:ResponsiveFlowLayout id="resData2" margin="true" weight="2">
+        </l:ResponsiveFlowLayout>
+        </l:layoutData>
+
+        <l:content>
+        <Label id="lblLast" text="Last Name"></Label>
+        <Input id="inpLast" value="홍"></Input>
+        </l:content>
+        </l:VerticalLayout>
+        
+        </l:VerticalLayout>
+        </l:content>
+        </l:ResponsiveFlowLayout>
+    </Page>
+</mvc:View>

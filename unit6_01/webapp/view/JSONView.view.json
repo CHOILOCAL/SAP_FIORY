@@ -1,0 +1,17 @@
+{
+    "Type" : "sap.ui.core.mvc.JSONView",
+    "controllerName": "unit601.controller.JSONView",
+    "content" : [
+        {
+            "Type": "sap.m.Image",
+            "id": "myImage",
+            "src": "http://www.sap.com/global/ui/images/global/sap-logo.png"
+        },
+        {
+            "Type": "sap.m.Button",
+            "id": "myButton",
+            "text": "JSON View Button",
+            "press": "onSubmit"
+        }
+    ]
+}

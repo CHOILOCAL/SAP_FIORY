@@ -1,0 +1,11 @@
+<mvc:View controllerName="sapui5app.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <Text id="idTxt1" text="SAPUI5 Programming"></Text>
+        <Text id="idTxt2" text="SAP Young Next Cloud"></Text>
+        <Button id="idBtn" text="press me" press="onSubmit" />
+        </content>
+    </Page>
+</mvc:View>

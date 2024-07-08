@@ -1,0 +1,18 @@
+<mvc:View controllerName="unit605.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:l="sap.ui.layout">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <Text text="Text on XML View" id="idText"/>
+        <CheckBox id="idCheckBox" select="onCBSelect" text="No"></CheckBox>
+        <mvc:JSView id="idJSView" viewName="unit605.view.JSView" />
+        <!-- layout -->
+        <l:VerticalLayout id="verticalLyoId">
+        <l:content>
+        <Label labelFor="idInput" text="Name" id="labId" />
+        
+        </l:content>
+        </l:VerticalLayout>
+        </content>
+    </Page>
+</mvc:View>

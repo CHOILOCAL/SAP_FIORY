@@ -44,6 +44,7 @@
                 <Input id="inpNo3" value="9255"></Input>
 
                 <Label id="lblImg" text="Image"></Label>
+                <!-- <Image id="idImg" width="480" height="300" src="/static/images/20231204085033836360.jpg"></Image> -->
                 <Image id="idImg" src="http://www.sap.com/global/ui/images/global/sap-logo.png"></Image>
             </f:content>
         </f:SimpleForm>

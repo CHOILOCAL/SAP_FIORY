@@ -1,0 +1,26 @@
+<mvc:View controllerName="unit707.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+        <Panel id="idPanel" expanded="true" expandable="true" expandAnimation="true">
+            <headerToolbar>
+                <Toolbar id="idToolbar">
+                    <content>
+                        <Text id="txtTitle" text="Personal Data"></Text>
+                        <ToolbarSpacer id="idToolSp"></ToolbarSpacer>
+                        <Button id="btnSave" icon="sap-icon://save" press="onSave"></Button>
+                        <Button id="btnCancel" icon="sap-icon://sys-cancel-2" press="onCancel"></Button>
+                    </content>
+                </Toolbar>
+            </headerToolbar>
+            <!--  -->
+            <content>
+                <Label id="lblFname" text="FirstName"></Label>
+                <Input id="inpFname" value="철수"></Input>
+                <Label id="lblLname" text="LastName"></Label>
+                <Input id="inpLname" value="최"></Input>
+            </content>
+        </Panel>
+    </Page>
+</mvc:View>

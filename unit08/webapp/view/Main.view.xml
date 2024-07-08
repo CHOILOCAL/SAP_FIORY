@@ -1,0 +1,36 @@
+<mvc:View controllerName="unit08.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+    <Page id="page" title="Exercise for layout controls">
+        <content>
+            <Panel headerText="Panel with SimpleForm" class="sapUiResponsiveContentPadding" id="panelId">
+                <content>
+                    <f:SimpleForm layout="ResponsiveGridLayout" editable="true" id="sipfId">
+                        <f:content>
+                            <Label text="Carrier" id="lbl1">
+                                <layoutData><l:GridData span="L2 M4 S12" id="data1"></l:GridData></layoutData>
+                            </Label>
+                            <Input id="inp1">
+                                <layoutData><l:GridData span="L10 M8 S12" id="data2"></l:GridData></layoutData>
+                            </Input>
+                            <Label text="Flight number" id="lbl2">
+                                <layoutData><l:GridData span="L2 M4 S12" id="data3"></l:GridData></layoutData>
+                            </Label>
+                            <Input id="inp2">
+                                <layoutData><l:GridData span="L10 M8 S12" id="data4"></l:GridData></layoutData>
+                            </Input>
+                            <!-- btn -->
+                            <Button text="submit" id="btn1">
+                                <layoutData><l:GridData indent="M4" span="L2 M8 S12" id="data5"></l:GridData></layoutData>
+                            </Button>
+                        </f:content>
+                        <f:title>
+                            <core:Title text="SimpleForm with ResponsiveGridLayout" id="tit1" />
+                        </f:title>
+                    </f:SimpleForm>
+                    <Image id="img" src="/images/plane.png" width="100%" class="sapUiHideOnPhone" />
+                </content>
+            </Panel>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmls="sap.m" xmls:core="sap.ui.core" xmls:l="sap.ui.layout">
+    <l:HorizontalLayout id="hrz">
+        <l:content>
+            <Input id="idInput" />
+            <Button text="Say Hello (XMl Fragment)" press="onXmlButtonPress" />
+            <Text id="idText" />
+        </l:content>
+    </l:HorizontalLayout>
+</core:FragmentDefinition>

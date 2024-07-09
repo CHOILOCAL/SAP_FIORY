@@ -1,0 +1,13 @@
+<mvc:View controllerName="unit8exe.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+        <l:VerticalLayout>
+            <l:content>
+                <core:Fragment id="idJsFrag" FragmentName="sap.training.fragments.view.MyJsFrag" type="JS" />
+                <core:Fragment id="idXmlFrag" FragmentName="sap.training.fragments.view.MyXmlFrag" type="XML" />
+            </l:content>
+        </l:VerticalLayout>
+    </Page>
+</mvc:View>

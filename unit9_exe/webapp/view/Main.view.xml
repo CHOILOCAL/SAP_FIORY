@@ -1,0 +1,16 @@
+<mvc:View controllerName="unit9exe.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:l="sap.ui.layout">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+        <l:VerticalLayout id="v1">
+            <l:content>
+                <RadioButton groupName="GroupA" selected="{/enabled}" text="Change" id="rb1"/>
+                <RadioButton groupName="GroupA" text="Display" id="rb2"/>
+
+                <Input enabled="{/enabled}" value="{/name}" valueLiveUpdate="true" id="ip1" />
+                <Text id="txt1" text="{/name}" />
+            </l:content>
+        </l:VerticalLayout>
+    </Page>
+</mvc:View>

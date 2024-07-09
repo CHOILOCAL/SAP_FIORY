@@ -1,0 +1,11 @@
+<mvc:View controllerName="unit8exe2.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+
+    <l:VerticalLayout id="vl">
+        <l:content>
+            <Button id="btn" press="onOpenDialog" text="open dialog"></Button>
+            <Text id="idText" />
+        </l:content>
+    </l:VerticalLayout>
+</mvc:View>

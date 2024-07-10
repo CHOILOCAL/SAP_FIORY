@@ -3,7 +3,7 @@
     xmlns="sap.m" xmlns:f="sap.ui.layout.form">
     <Page id="page" title="{i18n>title}">
         <!-- <content /> -->
-        <Carousel pages="{connections>/data}" height="50%" id="carId">
+        <Carousel pages="{connections>/data}" height="50%" id="carId" loop="true">
             <pages>
                 <f:SimpleForm id="sif">
                     <Label id="lb1" text="Carier"></Label>

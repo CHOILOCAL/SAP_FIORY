@@ -1,0 +1,9 @@
+<mvc:View controllerName="unit905.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+        <ComboBox id="comBox" items="{/data}" selectionChange="">
+        </ComboBox>
+    </Page>
+</mvc:View>

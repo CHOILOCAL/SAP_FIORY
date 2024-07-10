@@ -1,0 +1,22 @@
+<mvc:View controllerName="unit903.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+        <Input id="inpLname" value="{/lastName}"></Input>
+        <Input id="inpFname" value="{/firstName}"></Input>
+
+        <List id="ldList" items="{/skil}">
+            <items>
+                <StandardListItem id="stListItem" title="{sId}" description="{sName}"></StandardListItem>
+            </items>
+        </List>
+        <!--  -->
+        <ComboBox id="comBox" items="{com>/data/emp}">
+        <!--  -->
+            <items>
+                <core:Item id="idItem" key="{com>pernr}" text="{com>eName}"></core:Item>
+            </items>
+        </ComboBox>
+    </Page>
+</mvc:View>

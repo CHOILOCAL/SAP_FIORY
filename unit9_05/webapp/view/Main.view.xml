@@ -1,0 +1,23 @@
+<mvc:View controllerName="unit0905.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:t="sap.ui.table">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+        <t:Table id="idTable" rows="{/companies}" alternateRowColors="true">
+            <t:columns>
+                <t:Column id="colName">
+                    <t:label><Label id="lblName" text="Company Name"></Label></t:label>
+                    <t:template>
+                        <Text id="txtName" text="{name}"></Text>
+                    </t:template>
+                </t:Column>
+                <t:Column id="colCity">
+                    <t:label><Label id="lblCity" text="City"></Label></t:label>
+                    <t:template>
+                        <Text id="txtCity" text="{city}"></Text>
+                    </t:template>
+                </t:Column>
+            </t:columns>
+        </t:Table>
+    </Page>
+</mvc:View>

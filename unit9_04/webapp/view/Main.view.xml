@@ -1,0 +1,30 @@
+<mvc:View controllerName="unit904.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+        <Table id="idTable" items="{/companies}">
+            <columns>
+                <Column id="colName">
+                    <header>
+                        <Text id="hTxtName" text="Company Name"></Text>
+                    </header>
+                </Column>
+                <Column id="colCity">
+                    <header>
+                        <Text id="hTxtCity" text="City"></Text>
+                    </header>
+                </Column>
+            </columns>
+
+            <items>
+                <ColumnListItem id="colListItem">
+                    <cells>
+                        <Text id="celTxtName" text="{name}"></Text>
+                        <Text id="celTxtCity" text="{city}"></Text>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Page>
+</mvc:View>

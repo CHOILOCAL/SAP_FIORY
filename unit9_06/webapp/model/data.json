@@ -1,0 +1,41 @@
+{
+    "data": [
+        {
+            "depart": "HR",
+            "employes": [
+                {
+                    "name": "Mayer"
+                },
+                {
+                    "name": "Treusch"
+                },
+                {
+                    "name": "Schmitt"
+                },
+                {
+                    "name": "Stark"
+                }
+            ]
+        },
+        {
+            "depart": "Support",
+            "employes": [
+                {
+                    "name": "Muller"
+                },
+                {   
+                    "name": "Agassi"
+                },
+                    {"name": "Duck"}
+                ]
+            },
+            {
+                "depart": "Account",
+                "employes": [
+                    {"name": "Pan"},
+                    {"name": "Chalri"},
+                    {"name": "Jhone"}
+                ]
+            }
+    ]
+}

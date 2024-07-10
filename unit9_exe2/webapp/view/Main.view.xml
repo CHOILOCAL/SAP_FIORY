@@ -1,0 +1,21 @@
+<mvc:View controllerName="unit9exe2.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+        <Carousel pages="{connections>/data}" height="50%" id="carId">
+            <pages>
+                <f:SimpleForm id="sif">
+                    <Label id="lb1" text="Carier"></Label>
+                    <Text id="txt1" text="{connections>carrId}"></Text>
+                    <Label id="lb2" text="Flight Number"></Label>
+                    <Text id="txt2" text="{connections>connId}"></Text>
+                    <Label id="lb3" text="Departure"></Label>
+                    <Text id="txt3" text="{connections>cityFrom}"></Text>
+                    <Label id="lb4" text="Destination"></Label>
+                    <Text id="txt4" text="{connections>cityTo}"></Text>
+                </f:SimpleForm>
+            </pages>
+        </Carousel>
+    </Page>
+</mvc:View>

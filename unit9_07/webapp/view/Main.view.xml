@@ -1,0 +1,79 @@
+<mvc:View controllerName="unit907.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:t="sap.ui.table">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+         <f:SimpleForm id="simForm">
+            <f:content>
+                <Label id="lblLevel1" text="Sarary Level"></Label>
+                <ComboBox id="comBox" items="{level>Level}" selectionChange="onSelectionChange">
+                    <core:Item id="idItem" key="{level>key}" text="{level>key}"></core:Item>
+                </ComboBox>
+
+                <Button id="btnRmFilter" text="Remove Filter" press="onRemoveFilter"></Button>
+
+                <Label id="lblSort" text="Sorting"></Label>
+                <Button id="btnSort" text="Sorting" press="onSort"></Button>
+                <Button id="btnRmSort" text="Remove Sorting" press="onRemoveSort"></Button>
+            </f:content>
+         </f:SimpleForm>
+
+         <t:Table id="idTable" rows="{path: 'emp>/employees', filters:[
+         {path: 'Level', operator: 'BT', value1:'2', value2:'4'},
+         {path: 'Gender', operator: 'EQ', value1:'1'}],
+         sorter:[{path: 'Salary', descending:false }]}" selectionMode="None"
+                alternateRowColors="true">
+                <t:columns>
+                    <t:Column id="colName">
+                        <t:label>
+                            <Label id="lblName" text="Name"></Label></t:label>
+                            <t:template>
+                                <Text id="txtName" text="{emp>Ename}"></Text>
+                            </t:template>
+                    </t:Column>
+                    <t:Column id="colBDat">
+                        <t:label>
+                            <Label id="lblBDat" text="Date of Birth"></Label></t:label>
+                            <t:template>
+                                <Text id="txtBDat" text="{emp>Gbdat}"></Text>
+                            </t:template>
+                    </t:Column>
+                    <t:Column id="colGen">
+                        <t:label>
+                            <Label id="lblGen" text="Gender"></Label></t:label>
+                            <t:template>
+                                <Text id="txtGen" text="{emp>Gender}"></Text>
+                            </t:template>
+                    </t:Column>
+                    <t:Column id="colGenTx">
+                        <t:label>
+                            <Label id="lblGenTx" text="GenderTx"></Label></t:label>
+                            <t:template>
+                                <Text id="txtGenTx" text="{emp>GenderTx}"></Text>
+                            </t:template>
+                    </t:Column>
+                    <t:Column id="colLevel" hAlign="Center">
+                        <t:label>
+                            <Label id="lblLevel" text="Salary Level"></Label></t:label>
+                            <t:template>
+                                <Text id="txtLevel" text="{emp>Level}"></Text>
+                            </t:template>
+                    </t:Column>
+                    <t:Column id="colSalary" hAlign="Center">
+                        <t:label>
+                            <Label id="lblSalary" text="Salary"></Label></t:label>
+                            <t:template>
+                                <Text id="txtSalary" text="{emp>Salary}"></Text>
+                            </t:template>
+                    </t:Column>
+                    <t:Column id="colDept">
+                        <t:label>
+                            <Label id="lblDept" text="Dept"></Label></t:label>
+                            <t:template>
+                                <Text id="txtDept" text="{emp>Orgtx}"></Text>
+                            </t:template>
+                    </t:Column>
+                </t:columns>
+         </t:Table>
+    </Page>
+</mvc:View>

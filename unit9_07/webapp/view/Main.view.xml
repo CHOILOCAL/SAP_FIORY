@@ -6,25 +6,27 @@
          <f:SimpleForm id="simForm">
             <f:content>
                 <Label id="lblLevel1" text="Sarary Level"></Label>
-                <ComboBox id="comBox" items="{level>Level}" selectionChange="onSelectionChange">
-                    <core:Item id="idItem" key="{level>key}" text="{level>key}"></core:Item>
+                
+                <ComboBox id="comBox" items="{level>/Level}" selectionChange="onSelectionChange">
+                    <core:Item id="idItem" key="{level>key}" text="{level>key}" />
                 </ComboBox>
 
                 <Button id="btnRmFilter" text="Remove Filter" press="onRemoveFilter"></Button>
 
                 <Label id="lblSort" text="Sorting"></Label>
-                <Button id="btnSort" text="Sorting" press="onSort"></Button>
+                <Button id="btnSort" text="Sort Ascending by Salary" press="onSort"></Button>
                 <Button id="btnRmSort" text="Remove Sorting" press="onRemoveSort"></Button>
             </f:content>
          </f:SimpleForm>
 
-         <t:Table id="idTable" rows="{path: 'emp>/employees', filters:[
+         <!-- <t:Table id="idTable" rows="{path: 'emp>/employees', filters:[
          {path: 'Level', operator: 'BT', value1:'2', value2:'4'},
          {path: 'Gender', operator: 'EQ', value1:'1'}],
          sorter:[{path: 'Salary', descending:false }]}" selectionMode="None"
-                alternateRowColors="true">
+                alternateRowColors="true"> -->
+        <t:Table id="idTable" selectionMode="None" alternateRowColors="true" rows="{emp>/employees}">
                 <t:columns>
-                    <t:Column id="colName">
+                    <t:Column id="colName" sortProperty="Ename">
                         <t:label>
                             <Label id="lblName" text="Name"></Label></t:label>
                             <t:template>

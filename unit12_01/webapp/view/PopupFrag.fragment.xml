@@ -1,0 +1,22 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Dialog id="digPopup" title="Dialog box">
+        <buttons>
+            <Button id="btnClose" text="Close" press="onClose"></Button>
+        </buttons>
+
+    <content>
+        <Text id="txtPopup" text="Detail data"></Text>
+        <HBox id="idHbox">
+            <Label id="lblId" text="ID"></Label>
+            <Input id="inpId" editable="false" value="{ProductID}"></Input>
+            <Label id="lblName" text="Name"></Label>
+            <Input id="inpName" editable="false" value="{ProductName}"></Input>
+            <Label id="lblPrice" text="Price"></Label>
+            <Input id="inpPrice" editable="false" value="{ProductID}"></Input>
+        </HBox>
+    </content>
+    </Dialog>
+
+</core:FragmentDefinition>

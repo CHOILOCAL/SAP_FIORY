@@ -1,0 +1,11 @@
+<mvc:View controllerName="chartcolumn.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:viz="sap.viz.ui5.controls">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+        <!-- <viz:VizFrame id="idChart" vizType="line"> -->
+        <!-- <viz:VizFrame id="idChart" vizType="column"> -->
+        <Button id="btnChart" text="Chart" press="onChart"></Button>
+        <viz:VizFrame id="idChart" vizType="stacked_column" />
+    </Page>
+</mvc:View>

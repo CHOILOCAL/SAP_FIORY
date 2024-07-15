@@ -1,0 +1,30 @@
+<mvc:View controllerName="unit1202.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+        <Table id="tabCarrier" items="{/UX_C_Carrier_TP}"
+            width="auto" growing="true" 
+            growingThreshold="10" class="sapUiSmallMargin" mode="SingleSelectLeft"
+            selectionChange="onSelectionChange"
+        >
+            <columns>
+                <Column id="colId"><header><Text id="hTxtId" text="Airline Code"></Text></header></Column>
+                <Column id="colNm"><header><Text id="hTxtNm" text="Airline Name"></Text></header></Column>
+                <Column id="colCurr"><header><Text id="hTxtCurr" text="Currency Code"></Text></header></Column>
+                <Column id="colUrl"><header><Text id="hTxtUrl" text="Url"></Text></header></Column>
+            </columns>
+
+            <items>
+                <ColumnListItem id="colList">
+                    <cells>
+                        <Text id="celTxtId" text="{Carrid}" />
+                        <Text id="celTxtNm" text="{Carrname}" />
+                        <Text id="celTxtCurr" text="{Currcode}" />
+                        <Text id="celTxtUrl" text="{Url}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Page>
+</mvc:View>

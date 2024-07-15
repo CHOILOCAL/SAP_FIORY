@@ -65,7 +65,7 @@ function (Controller, JSONModel, FlattenedDataset, FeedItem) {
                 title: {text: "SAP Technology"},
                 plotArea: {
                     colorPalette: d3.scale.category20().range(),
-                    drawingEffect: "glossy" // normal
+                    drawingEffect: "normal" // normal
                 }
             });
 

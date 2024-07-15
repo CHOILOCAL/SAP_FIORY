@@ -1,0 +1,15 @@
+<mvc:View controllerName="quiz03.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+        <Panel id="idPanel" expandable="false" expanded="true" headerText="Product Category" width="auto" class="sapUiLargeMargin">
+            <content>
+                <Label id="lblCate" text="Category" design="Bold" required="true"></Label>
+                    <ComboBox id="idComBox" items="{/Categories}" selectionChange="onSelectionChange">
+                        <core:Item id="idItem" key="{CategoryID}" text="{CategoryName}"></core:Item>
+                    </ComboBox>
+            </content>
+        </Panel>
+    </Page>
+</mvc:View>

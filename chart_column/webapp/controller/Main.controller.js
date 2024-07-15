@@ -42,7 +42,19 @@ function (Controller, JSONModel, FlattenedDataset, FeedItem) {
             // Chart Start
             // Vizname에 Access.
             var oVizFrame = this.getView().byId("idChart");
-    
+            
+            var sValue = this.getView().byId("inpSch").getValue();
+            
+            var oFilter = new sap.ui.model.Filter(
+                "skillName",
+                sap.ui.model.FilterOperator.Contains,
+                sValue
+            );
+
+            // VizFrame에 할당된 Dataset 삭제
+            oVizFrame.destroyDataset();
+            oVizFrame.removeAllFeeds();
+
             // Pie Chart에 표시할 데이터를 바인딩.
             var oDataSet = new FlattenedDataset({
                 //
@@ -55,7 +67,8 @@ function (Controller, JSONModel, FlattenedDataset, FeedItem) {
                     value: "{rate}"
                 }],
                 data: {
-                    path: "/newSAP"
+                    path: "/newSAP",
+                    filters: [oFilter]
                 }
             });
             // setDataset/setModel 메소드를 통해 VixFrame에 데이터 할당 및 모델 할당.

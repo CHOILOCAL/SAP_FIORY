@@ -5,7 +5,14 @@
         <!-- <content /> -->
         <!-- <viz:VizFrame id="idChart" vizType="line"> -->
         <!-- <viz:VizFrame id="idChart" vizType="column"> -->
-        <Button id="btnChart" text="Chart" press="onChart"></Button>
+        <!-- <Button id="btnChart" text="Chart" press="onChart"></Button> -->
+         <HBox id="idHox" class="sapUiResponsiveMargin" alignItems="Center">
+         <items>
+         <Label id="lblSch" text="Search Term" class="sapUiSmallMarginEnd"></Label>
+            <Input id="inpSch"></Input>
+            <Button id="btnChart" text="Chart" press="onChart"></Button>
+         </items>
+        </HBox>
         <viz:VizFrame id="idChart" vizType="stacked_column" />
     </Page>
 </mvc:View>
